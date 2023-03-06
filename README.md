@@ -7,3 +7,4 @@ M293---Projekt---Cehic-Alen
 # 06.03.2023
 1. placeholder links in navigation added
 2. README.md corrected (wrong date was set)
+3. created all sub-pages with navigation
