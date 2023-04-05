@@ -11,3 +11,4 @@ M293---Projekt---Cehic-Alen
 
 # 05.04.2023
 1. added style.css file
+2. styled site navigation and body color
