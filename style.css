@@ -25,7 +25,10 @@ h1, h2 {
 }
 
 #indexArticle {
-    margin-top: 12%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
     text-align: center;
 }
 
@@ -46,6 +49,10 @@ a {
     background-color: #6F4E37;
     border-radius: 20px;
     color: #F2F2F2;
+}
+
+#currentNav {
+    background-color: #18B6DB;
 }
 
 .indexNav {
