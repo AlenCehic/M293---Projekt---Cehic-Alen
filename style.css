@@ -5,6 +5,7 @@ body * {
 body {
     color: #F2F2F2;
     background-color: #011126;
+    margin: 0;
 }
 
 #indexBody {
@@ -31,6 +32,12 @@ h1, h2 {
     left: 50%;
     transform: translate(-50%, -70%);
     text-align: center;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 ul {
@@ -79,4 +86,8 @@ li a:hover {
 
 #indexTitle {
     color: #F2F2F2;
+}
+
+.aboutMe {
+    height: 100vh;
 }
