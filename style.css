@@ -215,3 +215,32 @@ figcaption {
 .byodSupportPic {
     background-size: contain;
 }
+
+.vertical {
+    border-left: 3px solid #52F2F2;
+    height: 200px;
+    margin: 10px;
+}
+
+.strengthAndWeakness {
+    display: flex;
+    margin-top: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-68%, 0%)
+}
+
+.ability {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.ability h2 {
+    border-bottom: 3px solid #52F2F2;
+}
+
+.ability * {
+    margin-top: 10px;
+}

@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="ueberMich.html">Über mich</a></li>
-                <li><a id="currentNav" tabindex="2" aria-current="page">Fähigkeiten</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueberMich.html">Über mich</a></li>
+          <li>
+            <a id="currentNav" tabindex="2" aria-current="page">Fähigkeiten</a>
+          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
-    <section>
+    <div class="strengthAndWeakness">
+      <section class="strength">
         <h2>Stärken</h2>
         <ul>
-            <li>Analytisches und vernetztes Denken</li>
-            <li>Logik und Mathe</li>
-            <li>Zwischenmenschliche Fähigkeiten</li>
-            <li>Verantwortungsbewusst</li>
+          <li>Analytisches und vernetztes Denken</li>
+          <li>Logik und Mathe</li>
+          <li>Zwischenmenschliche Fähigkeiten</li>
+          <li>Verantwortungsbewusst</li>
         </ul>
-    </section>
-    <section>
+      </section>
+      <div class="vertical"></div>
+      <section class="weakness-container">
         <h2>Schwächen</h2>
-        <ul>
-            <li>Ungeduldig</li>
-            <li>Chaotisch</li>
+        <ul id="weakness">
+          <li>Ungeduldig</li>
+          <li>Chaotisch</li>
         </ul>
+      </section>
+    </div>
+    <section class="ability">
+      <h2>Fähigkeiten</h2>
+      <ul>
+        <li>IT-Skills</li>
+        <ul>
+            <li>HTML 5.2</li>
+            <li>CSS3</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>ASP.NET CORE</li>
+            <li>MySQL</li>
+            <li>Microsoft Office</li>
+        </ul>
+        <li>Sprachen</li>
+            <ul>
+                <li>Deutsch</li>
+                <li>Englisch</li>
+                <li>Französisch</li>
+            </ul>
+        </ul>
+      </ul>
     </section>
-    <section>
-        <h2>Fähigkeiten</h2>
-    </section>
-</body>
+  </body>
 </html>
