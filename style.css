@@ -37,7 +37,7 @@ h1, h2, h3 {
 nav {
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 10px;
 }
 
 nav ul {
@@ -190,13 +190,17 @@ footer h2 {
 .portfolioDiv {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
 figcaption {
     text-align: center;
+    font-size: 1.5em;
 }
 
+#slipKnot {
+    font-size: 1.1em;
+}
 .werdegangImg {
     float: right;
     display: flex;
@@ -210,6 +214,7 @@ figcaption {
     margin: 20px;
     padding: 20px;
     padding-top: 50px;
+    font-size: 1.5em;
 }
 
 .byodSupportPic {
@@ -243,4 +248,172 @@ figcaption {
 
 .ability * {
     margin-top: 10px;
+}
+
+.aboutMeArticle {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+#profileTitle {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 3em;
+}
+
+#profile {
+    font-size: 2em;
+}
+
+.aboutMeArticle > img {
+    height: 400px;
+    width: 400px;
+}
+
+.werdegangImg img {
+    height: 400px;
+    width: 400px;
+}
+
+.werdegangArticle p {
+    padding-right: 500px;
+}
+
+.goalsImg {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 875px;
+    margin-left: 20px;
+}
+
+#goalsParagraph, #goalsParagraph2 {
+    font-size: 1.5em;
+    margin-top: 150px;
+    padding-left: 400px;
+    margin-right: 20px;
+}
+
+#goalsParagraph2 {
+    margin-top: 350px;
+}
+
+#goalsTitle {
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+#hobbyTitle {
+    font-size: 3em;
+    text-align: center;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #F2F2F2;
+}
+
+#portfolioTitle {
+    position: absolute;
+    top:100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+@media only screen and (max-width: 536px) {
+
+    header {
+        background-color: #6F4E37;
+    }
+
+    .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #6F4E37;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 849px) {
+    .portfolioDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolioDivResponsive {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1355) {
+    #kontaktAndMap {
+        top: 1000px;
+    }
+
+    .contactResponsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li><a href="ueberMich.html">Über mich</a></li>
-          <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
-          <li>
-            <a id="currentNav" tabindex="3" aria-current="page">Portfolio</a>
-          </li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                  <li class="nav-item"><a class="nav-link" href="ueberMich.html">Über mich</a></li>
+                  <li class="nav-item"><a class="nav-link" href="faehigkeiten.html">Fähigkeiten</a></li>
+                  <li class="nav-item"><a class="nav-link" id="currentNav" tabindex="4" aria-current="page">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+              </nav>
         </ul>
       </nav>
     </header>
-    <h1>Portfolio-Titel</h1>
+    <h1 id="portfolioTitle">Portfolio</h1>
     <div class="portfolioDiv">
       <figure>
         <img src="Images/c_original_logo_icon_146611.png" alt="C Logo" />
@@ -36,7 +43,7 @@
         <figcaption>MVC in ASP.Net</figcaption>
       </figure>
     </div>
-    <div class="portfolioDiv">
+    <div class="portfolioDiv" id="portfolioDivResponsive">
       <figure>
         <img class="byodSupportPic" src="Images/byod.jpg" alt="Bild von einem BYOD" />
         <figcaption>BYOD Support</figcaption>

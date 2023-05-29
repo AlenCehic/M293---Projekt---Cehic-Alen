@@ -4,36 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Über Mich</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
+    <script src="script.js"></script>
+</head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a></li>
-          <li>
-            <a id="currentNav" tabindex="1" aria-current="page">Über mich</a>
-          </li>
-          <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+              <li class="nav-item"><a class="nav-link" id="currentNav" tabindex="2" aria-current="page">Über mich</a></li>
+              <li class="nav-item"><a class="nav-link" href="faehigkeiten.html">Fähigkeiten</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          </nav>
     </header>
-    <article class="aboutMe aboutMe">
-      <h2>Übersicht</h2>
-      <img src="Images/Profle.jpg" />
-      <ul id="profile">
-        <li>Name: Alen Cehic</li>
-        <li>Adresse: Untere Steinegg 4</li>
-        <li>Wohnort: Herisau</li>
-        <li>Geburtsdatum: 02.12.1997</li>
-        <li>Merkmale:</li>
-        <li>Grösse: 182cm</li>
-        <li>Geschlecht: Männlich</li>
-        <li>Besondere Merkmale: Brillenträger</li>
-      </ul>
+    <article class="aboutMe aboutMeSection">
+      <h2 id="profileTitle">Übersicht</h2>
+      <div class="aboutMeArticle">
+        <img src="Images/Profle.jpg" />
+        <ul id="profile">
+          <li>Name:</li>
+          <li>Adresse:</li>
+          <li>Wohnort:</li>
+          <li>Geburtsdatum:</li>
+          <br />
+          <li>Merkmale:</li>
+          <li>Grösse: 182cm</li>
+          <li>Geschlecht: Männlich</li>
+          <li>Besondere Merkmale: Brillenträger</li>
+        </ul>
+        <ul id="profile">
+          <li>Alen Cehic</li>
+          <li>Untere Steinegg 4</li>
+          <li>Herisau</li>
+          <li>02.12.1997</li>
+          <br /><br />
+          <li>182cm</li>
+          <li>Männlich</li>
+          <li>Brillenträger</li>
+        </ul>
+      </div>
     </article>
     <article class="light aboutMe">
       <div class="werdegangImg">
@@ -66,7 +83,7 @@
       </div>
     </article>
     <article class="aboutMe">
-      <h2>Hobbys</h2>
+      <h2 id="hobbyTitle">Hobbys</h2>
       <div class="portfolioDiv">
         <figure>
           <img src="Images/Snowboard_Small.jpg" />
@@ -77,8 +94,8 @@
           <figcaption>Gaming</figcaption>
         </figure>
         <figure>
-          <img />
-          <figcaption>Platzhalter</figcaption>
+          <img src="Images/movie-fr-lordrings.jpg"/>
+          <figcaption>Fantasy</figcaption>
         </figure>
       </div>
       <div class="portfolioDiv">
@@ -96,17 +113,19 @@
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1184783947&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
             alt="Slipknot Unsainted soundcloud"
           ></iframe>
-          <figcaption>
+          <figcaption id="slipKnot">
             Slipknot Unsainted Soundcloud: Mein aktueller Lieblingssong
           </figcaption>
         </figure>
       </div>
     </article>
-    <article class="light aboutMe">
-      <h2>Ziele</h2>
-      <img />
-      <img />
-      <p>
+    <article class="light aboutMe goalsArticle">
+      <h2 id="goalsTitle">Ziele</h2>
+      <div class="goalsImg">
+        <img src="Images/VR.jpg" />
+        <img src="Images/ahep-brain-icon.png"/>
+      </div>
+      <p id="goalsParagraph">
         Eines meiner grössten Träume ist mit meiner Leidenschaft für
         Computerspiele gekoppelt. Ich bin ein Leidenschaftlicher Fan von RPG
         oder noch mehr von MMORPG Spielen. Es gab für mich keine Vorstellung die
@@ -114,6 +133,16 @@
         zwar nicht nur durch den PC-Bildschirm. Aus diesen Gründen wäre eine
         optimierte VR-Fantasywelt in die man selbst möglichst realitätsnah
         eintauchen kann, ein grösster Traum.
+      </p>
+      <p id="goalsParagraph2">
+        Ein anderes Ziel ist natürlich nicht nur in Informatik, vorallem Software Development,
+        sehr kompetent zu werden. Sondern auch um dieses Wissen einzusetzen um in meinen Augen
+        die Welt besser zu gestalten. Dies beinhaltet nicht nur rein Softwaretechnische Lösungen
+        für externe Geräte, sondern auch für mögliche Implantate im Körper.
+        Ich lese immer wieder über Artikel wie, das an der ETH eine Beinprothese entwickelt wurde
+        die Rückmeldungen an das organische Nervensystem schickt, oder auch eine Brille mit Kamera
+        die bis zu einem gewissen Grade bei Blinden die Sehkraft wieder herstellen kann.
+        Benannt ist diese Technologie als "Neuroprothesen".
       </p>
     </article>
   </body>
