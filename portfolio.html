@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="ueberMich.html">Über mich</a></li>
-                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
-                <li><a id="currentNav" tabindex="3" aria-current="page">Portfolio</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueberMich.html">Über mich</a></li>
+          <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+          <li>
+            <a id="currentNav" tabindex="3" aria-current="page">Portfolio</a>
+          </li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <h1>Portfolio-Titel</h1>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-</body>
+    <div class="portfolioDiv">
+      <figure>
+        <img src="Images/c_original_logo_icon_146611.png" alt="C Logo" />
+        <figcaption>C-Programmieren</figcaption>
+      </figure>
+      <figure>
+        <img src="Images/c-sharp-c-icon-1822x2048-wuf3ijab.png" alt="C# Logo" />
+        <figcaption>OOP mit C#</figcaption>
+      </figure>
+      <figure>
+        <img src="Images/png-transparent-net-mvc-logo-asp-net-mvc-logo-net-framework-model-view-controller-framework-text-logo-microsoft-azure.png" alt="ASP.NET Core Logo" />
+        <figcaption>MVC in ASP.Net</figcaption>
+      </figure>
+    </div>
+    <div class="portfolioDiv">
+      <figure>
+        <img class="byodSupportPic" src="Images/byod.jpg" alt="Bild von einem BYOD" />
+        <figcaption>BYOD Support</figcaption>
+      </figure>
+      <figure>
+        <img src="Images/Knockout-Structure-274x300.webp" alt="Turniersystem" />
+        <figcaption>Turniersystem mit C#</figcaption>
+      </figure>
+    </div>
+  </body>
 </html>
