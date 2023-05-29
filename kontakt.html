@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="kontaktPage">
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="ueberMich.html">Über mich</a></li>
-                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a id="currentNav" tabindex="4" aria-current="page">Kontakt</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueberMich.html">Über mich</a></li>
+          <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li>
+            <a id="currentNav" tabindex="4" aria-current="page">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section>
-        <h2>Kontakt</h2>
+    <section id="formular">
+      <h2>Kontakt</h2>
+      <div id="kontaktFormular">
+        <form
+          action="SENDEADRESSE"
+          id="ft-form"
+          method="post"
+          accept-charset="UTF-8"
+        >
+          <fieldset class="noSpace">
+            <label>
+              Anrede:
+              <input type="text" name="Anrede" required />
+            </label>
+          </fieldset>
+          <fieldset class="noSpace">
+            <label>
+              Vorname:
+              <input type="text" name="Vorname" required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              Name:
+              <input type="text" name="Name" required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label class="extraSpace">
+              E-Mail:
+              <input type="text" name="E-Mail" required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label class="extraSpace">
+              Betreff:
+              <input type="text" name="Betreff" required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label id="message">
+              Nachricht:<br />
+              <input id="messageBox" type="text" name="Nachricht" required />
+            </label>
+          </fieldset>
+          <div>
+            <input type="text" name="_gotcha" value="" style="display: none" />
+            <input class="btn" type="submit" value="Senden" />
+          </div>
+        </form>
+      </div>
     </section>
-    <section>
-
+    <section class="kontaktAndMap">
+      <ul id="kontaktData">
+        <i>
+          <li>Alen Cehic</li>
+          <li>Untere Steinegg 4</li>
+          <li>9100 Herisau</li>
+          <li>+41 76 522 41 80</li>
+          <li>alen.cehic_13@hotmail.com</li>
+        </i>
+      </ul>
+      <h3>Google Maps</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.3876419083604!2d9.284023576844696!3d47.384869003262224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479adfd5ccccc2f9%3A0x92aeae6c63e42c4d!2sUntere%20Steinegg%204%2C%209100%20Herisau!5e0!3m2!1sde!2sch!4v1685361866386!5m2!1sde!2sch" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
-        
+      <h2>Social Media</h2>
+      <div class="socialMediaIcons">
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-youtube"></a>
+        <a href="" class="fa fa-twitch"></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

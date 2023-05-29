@@ -17,7 +17,7 @@ body {
     background-color: #8f919d;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #52F2F2;
 }
 
@@ -89,7 +89,7 @@ li a:hover {
 }
 
 .aboutMe {
-    height: 100vh;
+    height: 975px;
 }
 
 img {
@@ -99,4 +99,90 @@ img {
 
 #profile {
     list-style-type: none;
+}
+
+#formular {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+#ft-form {
+    background-color: #8f919d;
+    width: 500px;
+    height: 420px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 0px;
+}
+
+input {
+    float: right;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.noSpace {
+    padding-bottom: 0;
+}
+
+#messageBox {
+    float: none;
+    width: 100%;
+    height: 200px;
+}
+
+.btn {
+    width: 100px;
+    margin-right: 9px;
+}
+
+.btn:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #6F4E37;
+    color: #F2F2F2;
+}
+
+ul#kontaktData {
+    list-style-type: none;
+    padding: 0;
+}
+
+.kontaktAndMap {
+    position: absolute;
+    top: 150px;
+    left: 55%;
+}
+
+footer {
+    background-color: #8f919d;
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    top: 750px;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.fa {
+    font-size: 80px !important;
+    background-color: #8f919d;
+    color: #52F2F2;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMediaIcons a {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 0;
 }
